@@ -1,0 +1,38 @@
+[
+  {
+    "id": "blog-1",
+    "slug": "10-perfumes-importados-femininos-2025",
+    "title": "10 Perfumes Importados Femininos que Você Precisa Conhecer em 2025",
+    "excerpt": "Descubra as fragrâncias que estão conquistando mulheres ao redor do mundo neste ano. De clássicos atemporais a lançamentos surpreendentes.",
+    "content": "O mundo da perfumaria importada está mais diverso e emocionante do que nunca...",
+    "coverImage": "/images/blog/perfumes-2025.jpg",
+    "author": "Karina Viana",
+    "publishedAt": "2025-06-15",
+    "tags": ["perfumes", "tendências", "feminino"],
+    "readTime": 8
+  },
+  {
+    "id": "blog-2",
+    "slug": "rotina-skincare-coreana-passo-a-passo",
+    "title": "Rotina Skincare Coreana: O Guia Completo Passo a Passo",
+    "excerpt": "Aprenda os 10 passos da famosa rotina de cuidados coreana e entenda por que ela revolucionou o mundo da beleza.",
+    "content": "A rotina de skincare coreana ganhou fama mundial por seus resultados impressionantes...",
+    "coverImage": "/images/blog/skincare-coreana.jpg",
+    "author": "Karina Viana",
+    "publishedAt": "2025-05-28",
+    "tags": ["skincare", "rotina", "K-beauty"],
+    "readTime": 12
+  },
+  {
+    "id": "blog-3",
+    "slug": "como-identificar-cosmeticos-originais",
+    "title": "Como Identificar Cosméticos Originais: Guia Anti-Falsificação",
+    "excerpt": "Aprenda a reconhecer produtos originais e proteger sua pele de falsificações perigosas. Dicas essenciais para compras seguras.",
+    "content": "Com o crescimento do mercado de cosméticos importados, também cresceram as falsificações...",
+    "coverImage": "/images/blog/originais.jpg",
+    "author": "Karina Viana",
+    "publishedAt": "2025-05-10",
+    "tags": ["dicas", "segurança", "importados"],
+    "readTime": 6
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cat-1",
+    "slug": "perfumes",
+    "name": "Perfumes",
+    "description": "Fragrâncias importadas das melhores maisons do mundo",
+    "image": "/images/products/perfume-placeholder.jpg",
+    "icon": "Sparkles",
+    "subcategories": ["Feminino", "Masculino", "Unissex"],
+    "productCount": 24
+  },
+  {
+    "id": "cat-2",
+    "slug": "maquiagem",
+    "name": "Maquiagem",
+    "description": "Maquiagem premium para todos os estilos e ocasiões",
+    "image": "/images/products/makeup-placeholder.jpg",
+    "icon": "Palette",
+    "subcategories": ["Rosto", "Olhos", "Lábios", "Acessórios"],
+    "productCount": 36
+  },
+  {
+    "id": "cat-3",
+    "slug": "skincare",
+    "name": "Skincare",
+    "description": "Cuidados com a pele com tecnologia de ponta",
+    "image": "/images/products/skincare-placeholder.jpg",
+    "icon": "Droplets",
+    "subcategories": ["Limpeza", "Hidratação", "Tratamento", "Proteção Solar"],
+    "productCount": 28
+  },
+  {
+    "id": "cat-4",
+    "slug": "cabelos",
+    "name": "Cabelos",
+    "description": "Tratamentos capilares profissionais importados",
+    "image": "/images/products/hair-placeholder.jpg",
+    "icon": "Wind",
+    "subcategories": ["Shampoo", "Condicionador", "Tratamento", "Finalização"],
+    "productCount": 18
+  },
+  {
+    "id": "cat-5",
+    "slug": "corpo-banho",
+    "name": "Corpo & Banho",
+    "description": "Hidratantes, óleos e produtos para o corpo",
+    "image": "/images/products/body-placeholder.jpg",
+    "icon": "Bath",
+    "subcategories": ["Hidratantes", "Óleos", "Sabonetes", "Esfoliantes"],
+    "productCount": 15
+  },
+  {
+    "id": "cat-6",
+    "slug": "acessorios",
+    "name": "Acessórios",
+    "description": "Necessaires, pincéis e acessórios de beleza",
+    "image": "/images/products/accessories-placeholder.jpg",
+    "icon": "Gem",
+    "subcategories": ["Pincéis", "Necessaires", "Espelhos", "Organizadores"],
+    "productCount": 12
+  }
+]

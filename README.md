@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Karina Viana Importados
 
-## Getting Started
+E-commerce premium de cosméticos e beleza importados.
 
-First, run the development server:
+## 🚀 Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Estilo**: Tailwind CSS 4
+- **Estado**: Zustand
+- **Animações**: Framer Motion
+- **Ícones**: Lucide React
+- **Deploy**: Vercel
+
+## 📦 Funcionalidades
+
+- ✅ Home com hero imersivo e seções animadas
+- ✅ Catálogo com filtros (categoria, marca, busca, ordenação)
+- ✅ Página de produto detalhada
+- ✅ Carrinho de compras (drawer lateral + página)
+- ✅ Checkout com pagamento via Pix
+- ✅ Conta do cliente (login, registro, pedidos)
+- ✅ Painel admin (dashboard, produtos, pedidos)
+- ✅ Blog com posts
+- ✅ Páginas institucionais (Sobre, Contato, FAQ)
+- ✅ Botão flutuante WhatsApp
+- ✅ Design responsivo mobile-first
+- ✅ SEO otimizado
+
+## 🎨 Paleta
+
+| Cor | Hex |
+|-----|-----|
+| Gold Dark | #B8860B |
+| Gold | #D4A853 |
+| Gold Light | #E8C97A |
+| Cream | #F2E8D9 |
+| Pearl | #FAF6F0 |
+| Brown Dark | #5C4A32 |
+| Brown | #7A6548 |
+
+## 🛠️ Como rodar
 
 ```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build de produção
+npm run build
+
+# Iniciar produção
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔑 Acesso Admin
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- URL: `/admin/login`
+- Senha padrão: `admin123`
+- Para alterar: edite `NEXT_PUBLIC_ADMIN_PASSWORD` no `.env.local`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💳 Pagamento
 
-## Learn More
+- Método: Pix manual
+- Para configurar a chave Pix: edite `PIX_KEY` em `src/lib/utils.ts`
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 WhatsApp
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Número configurado: (14) 99746-3756
+- Para alterar: edite `WHATSAPP_NUMBER` em `src/lib/utils.ts`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Como adicionar produtos
 
-## Deploy on Vercel
+Edite o arquivo `src/data/products.json` seguindo a estrutura dos produtos existentes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deploy na Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Faça push do projeto para o GitHub
+2. Conecte o repositório na Vercel
+3. Configure a variável de ambiente `NEXT_PUBLIC_ADMIN_PASSWORD`
+4. Deploy automático!
