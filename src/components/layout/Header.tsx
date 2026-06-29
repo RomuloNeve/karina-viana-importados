@@ -57,10 +57,10 @@ export function Header() {
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <button
               aria-label="Buscar"
-              className="p-2 text-brown hover:text-gold-dark transition-colors"
+              className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-brown hover:text-gold-dark transition-colors"
             >
               <Search size={20} />
             </button>
@@ -68,7 +68,7 @@ export function Header() {
             <Link
               href="/conta"
               aria-label="Minha conta"
-              className="p-2 text-brown hover:text-gold-dark transition-colors"
+              className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-brown hover:text-gold-dark transition-colors"
             >
               <User size={20} />
             </Link>
@@ -76,11 +76,11 @@ export function Header() {
             <button
               onClick={openCart}
               aria-label="Carrinho"
-              className="relative p-2 text-brown hover:text-gold-dark transition-colors"
+              className="relative p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-brown hover:text-gold-dark transition-colors"
             >
               <ShoppingBag size={20} />
               {itemCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-gold-dark text-white text-xs rounded-full flex items-center justify-center font-medium">
+                <span className="absolute top-0.5 right-0.5 w-5 h-5 bg-gold-dark text-white text-xs rounded-full flex items-center justify-center font-medium">
                   {itemCount}
                 </span>
               )}
@@ -89,7 +89,7 @@ export function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 text-brown hover:text-gold-dark transition-colors"
+              className="md:hidden p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-brown hover:text-gold-dark transition-colors"
               aria-label="Menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -104,13 +104,13 @@ export function Header() {
             mobileMenuOpen ? "max-h-64 pb-4" : "max-h-0"
           )}
         >
-          <nav className="flex flex-col gap-3 pt-4 border-t border-gold-light/20">
+          <nav className="flex flex-col gap-1 pt-4 border-t border-gold-light/20">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-brown-dark hover:text-gold-dark transition-colors text-sm font-medium py-2"
+                className="text-brown-dark hover:text-gold-dark transition-colors text-sm font-medium py-3 min-h-[44px] flex items-center"
               >
                 {item.name}
               </Link>

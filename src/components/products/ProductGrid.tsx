@@ -123,12 +123,103 @@ export function ProductGrid({ initialCategory }: ProductGridProps) {
       </div>
 
       <div className="flex gap-8">
-        {/* Sidebar filters */}
-        <aside
-          className={`${
-            showFilters ? "block" : "hidden"
-          } sm:block w-full sm:w-56 shrink-0`}
-        >
+        {/* Mobile filter overlay */}
+        {showFilters && (
+          <div className="fixed inset-0 z-50 sm:hidden">
+            <div className="absolute inset-0 bg-black/40" onClick={() => setShowFilters(false)} />
+            <div className="absolute left-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-xl overflow-y-auto p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="font-[var(--font-heading)] text-lg font-semibold text-brown-dark">
+                  Filtros
+                </h2>
+                <button
+                  onClick={() => setShowFilters(false)}
+                  className="p-2 text-brown hover:text-brown-dark min-w-[44px] min-h-[44px] flex items-center justify-center"
+                  aria-label="Fechar filtros"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+              <div className="space-y-6">
+                {/* Categories */}
+                <div>
+                  <h3 className="font-[var(--font-heading)] text-sm font-semibold text-brown-dark mb-3">
+                    Categorias
+                  </h3>
+                  <div className="space-y-1">
+                    <button
+                      onClick={() => { setSelectedCategory(""); setShowFilters(false); }}
+                      className={`block w-full text-left text-sm py-2.5 px-3 rounded-lg transition-colors min-h-[44px] ${
+                        !selectedCategory
+                          ? "bg-gold-light/30 text-gold-dark font-medium"
+                          : "text-brown hover:text-gold-dark"
+                      }`}
+                    >
+                      Todas
+                    </button>
+                    {categories.map((cat) => (
+                      <button
+                        key={cat.id}
+                        onClick={() => { setSelectedCategory(cat.slug); setShowFilters(false); }}
+                        className={`block w-full text-left text-sm py-2.5 px-3 rounded-lg transition-colors min-h-[44px] ${
+                          selectedCategory === cat.slug
+                            ? "bg-gold-light/30 text-gold-dark font-medium"
+                            : "text-brown hover:text-gold-dark"
+                        }`}
+                      >
+                        {cat.name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                {/* Brands */}
+                <div>
+                  <h3 className="font-[var(--font-heading)] text-sm font-semibold text-brown-dark mb-3">
+                    Marcas
+                  </h3>
+                  <div className="space-y-1">
+                    <button
+                      onClick={() => { setSelectedBrand(""); setShowFilters(false); }}
+                      className={`block w-full text-left text-sm py-2.5 px-3 rounded-lg transition-colors min-h-[44px] ${
+                        !selectedBrand
+                          ? "bg-gold-light/30 text-gold-dark font-medium"
+                          : "text-brown hover:text-gold-dark"
+                      }`}
+                    >
+                      Todas
+                    </button>
+                    {brands.map((brand) => (
+                      <button
+                        key={brand}
+                        onClick={() => { setSelectedBrand(brand); setShowFilters(false); }}
+                        className={`block w-full text-left text-sm py-2.5 px-3 rounded-lg transition-colors min-h-[44px] ${
+                          selectedBrand === brand
+                            ? "bg-gold-light/30 text-gold-dark font-medium"
+                            : "text-brown hover:text-gold-dark"
+                        }`}
+                      >
+                        {brand}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                {/* Clear */}
+                {hasActiveFilters && (
+                  <button
+                    onClick={() => { clearFilters(); setShowFilters(false); }}
+                    className="flex items-center gap-2 text-sm text-red-500 hover:text-red-600 transition-colors min-h-[44px]"
+                  >
+                    <X size={14} />
+                    Limpar filtros
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Desktop sidebar filters */}
+        <aside className="hidden sm:block w-56 shrink-0">
           <div className="sticky top-28 space-y-6">
             {/* Categories */}
             <div>

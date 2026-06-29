@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-cream via-pearl to-cream">
+    <section className="relative min-h-[70vh] sm:min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-cream via-pearl to-cream">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gold-light/10 rounded-full blur-3xl" />
@@ -84,7 +84,7 @@ export function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="flex items-center gap-6 mt-10 justify-center lg:justify-start"
+              className="flex items-center gap-4 sm:gap-6 mt-10 justify-center lg:justify-start flex-wrap"
             >
               <div className="text-center">
                 <p className="font-[var(--font-heading)] text-2xl font-bold text-gold-dark">

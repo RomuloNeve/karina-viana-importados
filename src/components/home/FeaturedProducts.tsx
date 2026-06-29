@@ -35,9 +35,9 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
           {/* Wishlist button */}
           <button
             aria-label="Adicionar aos favoritos"
-            className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white hover:text-red-500"
+            className="absolute top-3 right-3 z-10 w-11 h-11 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity hover:bg-white hover:text-red-500"
           >
-            <Heart size={16} />
+            <Heart size={18} />
           </button>
 
           {/* Placeholder visual */}
@@ -50,10 +50,10 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
           </div>
 
           {/* Quick add overlay */}
-          <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <div className="absolute inset-x-0 bottom-0 p-4 translate-y-0 sm:translate-y-full sm:group-hover:translate-y-0 transition-transform duration-300">
             <button
               onClick={() => addItem(product as Product)}
-              className="w-full flex items-center justify-center gap-2 bg-gold-dark hover:bg-gold text-white py-3 rounded-xl font-medium text-sm transition-colors"
+              className="w-full flex items-center justify-center gap-2 bg-gold-dark hover:bg-gold text-white py-3 rounded-xl font-medium text-sm transition-colors min-h-[44px]"
             >
               <ShoppingBag size={16} />
               Adicionar ao Carrinho

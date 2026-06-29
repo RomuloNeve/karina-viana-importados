@@ -72,7 +72,7 @@ export function Footer() {
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
+                className="w-11 h-11 rounded-full bg-cream/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
                 aria-label="Instagram"
               >
                 <InstagramIcon size={18} />
@@ -81,14 +81,14 @@ export function Footer() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
+                className="w-11 h-11 rounded-full bg-cream/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
                 aria-label="WhatsApp"
               >
                 <Phone size={18} />
               </a>
               <a
                 href="mailto:contato@karianaviana.com"
-                className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
+                className="w-11 h-11 rounded-full bg-cream/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
                 aria-label="Email"
               >
                 <Mail size={18} />
@@ -101,12 +101,12 @@ export function Footer() {
             <h4 className="font-[var(--font-heading)] text-sm font-semibold text-gold-light uppercase tracking-wider mb-4">
               Categorias
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {footerLinks.loja.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-cream/70 hover:text-gold-light transition-colors text-sm"
+                    className="text-cream/70 hover:text-gold-light transition-colors text-sm py-1.5 inline-block min-h-[36px] flex items-center"
                   >
                     {link.name}
                   </Link>
@@ -120,12 +120,12 @@ export function Footer() {
             <h4 className="font-[var(--font-heading)] text-sm font-semibold text-gold-light uppercase tracking-wider mb-4">
               Institucional
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {footerLinks.institucional.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-cream/70 hover:text-gold-light transition-colors text-sm"
+                    className="text-cream/70 hover:text-gold-light transition-colors text-sm py-1.5 inline-block min-h-[36px] flex items-center"
                   >
                     {link.name}
                   </Link>

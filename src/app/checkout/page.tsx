@@ -294,13 +294,13 @@ export default function CheckoutPage() {
               <p className="text-sm text-brown mb-3 font-medium">
                 Chave Pix:
               </p>
-              <div className="flex items-center justify-center gap-3">
-                <code className="text-brown-dark font-mono text-sm bg-white px-4 py-2 rounded-lg border border-gold-light/30">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
+                <code className="text-brown-dark font-mono text-sm bg-white px-4 py-2 rounded-lg border border-gold-light/30 break-all text-center">
                   {PIX_KEY}
                 </code>
                 <button
                   onClick={handleCopyPix}
-                  className="flex items-center gap-1.5 px-4 py-2 bg-gold-dark hover:bg-gold text-white rounded-lg text-sm font-medium transition-colors"
+                  className="flex items-center justify-center gap-1.5 px-4 py-3 bg-gold-dark hover:bg-gold text-white rounded-lg text-sm font-medium transition-colors min-h-[44px]"
                 >
                   {copied ? (
                     <>

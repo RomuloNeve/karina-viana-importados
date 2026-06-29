@@ -85,10 +85,10 @@ export function CartDrawer() {
                           onClick={() =>
                             updateQuantity(item.product.id, item.quantity - 1)
                           }
-                          className="w-8 h-8 flex items-center justify-center text-brown hover:bg-cream transition-colors"
+                          className="w-10 h-10 flex items-center justify-center text-brown hover:bg-cream transition-colors"
                           aria-label="Diminuir"
                         >
-                          <Minus size={12} />
+                          <Minus size={14} />
                         </button>
                         <span className="w-8 text-center text-sm font-medium text-brown-dark">
                           {item.quantity}
@@ -97,16 +97,16 @@ export function CartDrawer() {
                           onClick={() =>
                             updateQuantity(item.product.id, item.quantity + 1)
                           }
-                          className="w-8 h-8 flex items-center justify-center text-brown hover:bg-cream transition-colors"
+                          className="w-10 h-10 flex items-center justify-center text-brown hover:bg-cream transition-colors"
                           aria-label="Aumentar"
                         >
-                          <Plus size={12} />
+                          <Plus size={14} />
                         </button>
                       </div>
 
                       <button
                         onClick={() => removeItem(item.product.id)}
-                        className="text-xs text-red-500 hover:text-red-600 transition-colors"
+                        className="text-xs text-red-500 hover:text-red-600 transition-colors py-2 px-2 min-h-[44px] flex items-center"
                       >
                         Remover
                       </button>
